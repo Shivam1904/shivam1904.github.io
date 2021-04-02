@@ -190,14 +190,19 @@
         <div class="my-auto">
           <h2 class="mb-5">Experience</h2>
 
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            
+            <div class="resume-content mr-auto" data-toggle="collapse" href="#job1">
               <h3 class="mb-0">Student Researcher & Teaching Assistant</h3>
               <div class="subheading mb-3">University of South Florida</div>
-              <p>
+              <div class="collapse" id="job1">
                 <li><b>Research Focus:</b> Affective Vision, Deep Learning and Computer Vision </li>
                 <li>Study and build machine learning models for <b>recognizing human emotion and behavior</b>.</li>
-              </p>
+            </div>
+            <div class="d-flex justify-content-end" id="showmore1">
+              <span> ...SHOW MORE </span>
+            </div>
+
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">Jan 2020 - Present</span>
@@ -205,30 +210,36 @@
           </div>
 
 
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto" data-toggle="collapse" href="#job2">
               <h3 class="mb-0">Software Developer</h3>
               <div class="subheading mb-3">Delhivery</div>
+              <div class="collapse" id="job2">
               <ul class="list-display list-checkmarks">
-                  <li>Responsible for gathering requirements and building a scalable cloud-based <span class="func">Data Warehouse</span> and <span class="func">Data Lake</span>, which improved the average time for analytical queries by 30% and reduced production downtime by 2X.</li>
+                  <li>Created a <b>data pipeline</b> using <span class="tech">AWS Big Data Ecosystem</span> and <span class="tech">Apache Airflow</span> and managed a multi-node <span class="tech">Redshift cluster</span>, handling 2000+ queries serving different dashboards daily. </li>
 
-                  <li>Created a <b>data pipeline</b> using <span class="tech">AWS Big Data Ecosystem</span> and <span class="tech">Apache Airflow</span> and managed a multi-node <span class="tech">Redshift cluster</span>, handling 2000+ queries serving different dashboards daily. Authored multiple <span class="tech">AWS Lambda</span>'s scripts that validates and cleans the real-time streaming data from <span class="tech">Kinesis/Kafka</span> and stores on S3 and Redshift. </li>
+                  <li>Responsible for gathering requirements and building a large scale cloud-based <span class="func">Data Warehouse</span> for streaming data and <span class="func">Data Lake</span> for historical data, which improved the average time for analytical queries by 30% and reduced production downtime by 2X.</li>
+
 
                   <li>Implemented an <span class="tech">Apache Spark</span> batch job running on <span class="tech">AWS EMR</span> that converts the historical raw JSON data dumps into an analytical query-optimized <span class="tech">Parquet</span> data format. This reduced the storage cost by 80% on S3 and approximately 70% data scans on queries, reducing Athena’s (AWS’s query service) per-TB-scanned billing cost. </li>
 
                   <li>Implemented <span class="func">unit testing</span> using Pytest and an <span class="func">offline integration testing</span> pipeline using localstack/moto library which removed the dependency of creating and maintaining resources for the test environment, thus cutting total resource's cost by 25%. </li>
-
               </ul>
+            </div>
+            <div class="d-flex justify-content-end" id="showmore2">
+              <span> ...SHOW MORE </span>
+            </div>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">June 2017 - June 2019</span>
             </div>
           </div>
 
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Back End Developer</h3>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto" data-toggle="collapse" href="#job3">
+              <h3 class="mb-0">Software Developer</h3>
               <div class="subheading mb-3">Neuron Inc</div>
+              <div class="collapse" id="job3">
               <ul class="list-display list-checkmarks">
                 <li> Created and managed Neuron’s developer platform which offered multiple natural language processing based services to users according to the subscription opted. Responsible for designing and developing server side <span class="func">RESTful</span> services using <span class="tech">Django REST Framework</span>. </li>
 
@@ -238,7 +249,11 @@
 
                 <li> Worked closely with clients, AI team, and Senior Developers for requirement gathering, planning, and implementation of the projects with focus on high availability, low latency, and scalability. </li>
               </ul>
-            </p>
+            </div>
+            <div class="d-flex justify-content-end" id="showmore3">
+              <span> ...SHOW MORE </span>
+            </div>
+            <!-- </p> -->
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">May 2016 - May 2017</span>
@@ -383,7 +398,7 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/resume.min.js"></script>
+    <script src="js/resume.js"></script>
 
   </body>
 

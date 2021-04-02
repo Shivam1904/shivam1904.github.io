@@ -3,6 +3,37 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
+#job1.collapse:not(.show) {
+  display: block;
+  height: 1.5rem;
+  overflow: hidden;
+}
+
+#job1.collapsing {
+  height: 1.5rem;
+}
+
+#job2.collapse:not(.show) {
+  display: block;
+  height: 8rem;
+  overflow: hidden;
+}
+
+#job2.collapsing {
+  height: 8rem;
+}
+
+#job3.collapse:not(.show) {
+  display: block;
+  height: 3rem;
+  overflow: hidden;
+}
+
+#job3.collapsing {
+  height: 3rem;
+}
+
+
 
 body {
   font-family: monospace;
@@ -60,21 +91,21 @@ h2 {
 .list-social-icons a {
   color: #495057; }
   .list-social-icons a:hover {
-    color: #5d1731; }
+    color: #215163; }
   .list-social-icons a .fa-lg {
     font-size: 1.75rem; }
 
 .list-icons {
   font-size: 3rem; }
   .list-icons .list-inline-item i:hover {
-    color: #5d1731; }
+    color: #215163; }
 
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
   text-transform: uppercase; }
 
 #jobbanner  {
-  color: #5d1731 !important; 
+  color: #6d0b0b !important; 
   font-size: 22px;
   font-family: monospace;
 }
@@ -130,12 +161,12 @@ section.resume-section {
     padding-bottom: 3rem !important; } }
 
 .bg-primary {
-  background-color: #5d1731 !important; }
+  background-color: #215163 !important; }
 
 .text-primary {
-  color: #5d1731 !important; }
+  color: #215163 !important; }
 
 a {
-  color: #5d1731; }
+  color: #215163; }
   a:hover, a:focus, a:active {
     color: #824027; }

@@ -25,4 +25,38 @@
     target: '#sideNav'
   });
 
+  $('#job1').on('show.bs.collapse ', function () {
+    $('#showmore2').text(function(i,old){
+        return "...SHOW LESS";
+    });
+  });
+  $('#job1').on('hidden.bs.collapse ', function () {
+    $('#showmore2').text(function(i,old){
+        return "...SHOW MORE";
+    });
+  });
+
+  $('#job2').on('show.bs.collapse ', function () {
+    $('#showmore2').text(function(i,old){
+        return "...SHOW LESS";
+    });
+  });
+  $('#job2').on('hidden.bs.collapse ', function () {
+    $('#showmore2').text(function(i,old){
+        return "...SHOW MORE";
+    });
+  });
+
+  $('#job3').on('show.bs.collapse ', function () {
+    $('#showmore2').text(function(i,old){
+        return "...SHOW LESS";
+    });
+  });
+  $('#job3').on('hidden.bs.collapse ', function () {
+    $('#showmore2').text(function(i,old){
+        return "...SHOW MORE";
+    });
+  });
+
+
 })(jQuery); // End of use strict
