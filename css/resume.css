@@ -5,9 +5,28 @@
  */
 
 body {
-  font-family: 'Open Sans', serif;
+  font-family: monospace;
   padding-top: 54px;
-  color: #868e96; }
+  color: #4a4a4a; 
+  font-size: 15px;
+}
+
+span.tech {
+  font-weight: bolder;
+  color: #3a3737;
+}
+
+span.func {
+  font-weight: bolder;
+  color: #584747;
+}
+
+.page1_block {
+  display: block;
+  text-align: justify;
+  font-size: 14.5px !important;
+  margin-bottom: 9px !important;
+}
 
 @media (min-width: 992px) {
   body {
@@ -53,6 +72,12 @@ h2 {
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
   text-transform: uppercase; }
+
+#jobbanner  {
+  color: #5d1731 !important; 
+  font-size: 22px;
+  font-family: monospace;
+}
 
 @media (min-width: 992px) {
   #sideNav {
